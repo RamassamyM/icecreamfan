@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description=" content="Iceme is the best online place to order ice creams on Earth.">
+  <meta property="og:title" content="Iceme, the best Icecream website">
+  <meta property="og:image" content="banner3.jpeg">
+  <meta property="og:description" content="Iceme is the best online place to order ice creams on Earth.">
+  <title>Iceme</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <!-- navbar -->
+
+<!-- navbar -->
+
+  <div class="mynavbar">
+  <a href="#">
+    <img src="images/logo.png" class="logo-small" alt="">
+  </a>
+  <div class="navbar-links d-none d-sm-block">
+    <a href="index.html">Accueil</a>
+    <a href="icecreams.html">Nos parfums</a>
+    <a href="index.html#perfumes">Simplement</a>
+    <a href="index.html" >Commander</a>
+    <div class="dropdown navbar-dropdown">
+      <img src="http://farm6.static.flickr.com/5144/5768644375_103395265b.jpg" alt="Bertrand Bussac" class="avatar navbar-avatar" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Mon profil</a>
+        <a class="dropdown-item" href="#">Mon compte</a>
+        <a class="dropdown-item" href="contact.html">Nous contacter</a>
+      </div>
+    </div>
+  </div>
+  <div class="dropdown d-block d-sm-none navbar-hamburger">
+    <i class="fas fa-bars fa-2x" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="index.html">Accueil</a>
+      <a class="dropdown-item" href="#">Nos glaces</a>
+      <a class="dropdown-item" href="#">Commander</a>
+      <a class="dropdown-item" href="#">Mon profil</a>
+      <a class="dropdown-item" href="#">My account</a>
+      <a class="dropdown-item" href="mailto:contact@gmail.com">Nous contacter</a>
+    </div>
+  </div>
+</div>
+
+  <!-- banner -->
+  <div class="banner">
+    <div class="banner-content">
+      <h1>Nous sommes à Kedge</h1>
+    </div>
+  </div>
+
+  <!-- map -->
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      // Create a map object and specify the DOM element for display.
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 44.796574, lng: -0.601835},
+        zoom: 16
+      });
+      var marker = new google.maps.Marker({
+          position: {lat: 44.796574, lng: -0.601835},
+          map: map
+        });
+    }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgaSyPRI3H8AFipZ4JHW3cAd0VPvk46_U&callback=initMap"
+    async defer></script>
+
+
+
+
+  <!-- footer -->
+  <div class="footer text-center">
+    <a href=""><i class="fab fa-facebook-f fa-2x mr-4"></i></a>
+    <a href=""><i class="fab fa-twitter fa-2x mr-4"></i></a>
+    <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+    <p class="mt-4">IceMe est une compagnie fictive créée dans le cadre des cours Coding Skills à Kedge BS</p>
+  </div>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
